@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script src="https://kit.fontawesome.com/e95c2a11dc.js" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Ermal Komoni</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#work">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <!-- <i class="fas fa-times" onclick="closemenu()"></i> -->
+        </ul>
+        <!-- <i class="fas fa-bars" onclick="openmenu()"></i> -->
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Ermal Komoni</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#work" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/imagecircle2.png" alt="Ermal Komoni profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ermal Komoni</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/ermal-komoni-resume.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img src="./images/linkedinicon.png" alt="My LinkdIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/ermalkomoni/'">
+          <img src="./images/githubicon.png" alt="My GitHub Profile" class="icon" onclick="location.href='https://github.com/ermal666'">
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION -->
+    <section>
+      <div id="about">
+          <div class="container">
+              <div class="row-about">
+                  <div class="about-col-1">
+                      <img src="./images/portofolioimage.jpg" alt="About Photo">
+                  </div>
+                  <div class="about-col-2">
+                      <h1 class="sub-title">About Me</h1>
+                      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                          Quia adipisci doloribus recusandae dicta maiores facilis reprehenderit
+                          molestiae illum nulla iste voluptatem, nobis nisi. 
+                          Aliquid id unde voluptates ducimus incidunt exercitationem!</p>
+  
+                          <div class="tab-titles">
+                              <p class="tab-links active-link">Education</p>
+                          </div>
+                          <div class="tab-contents">
+                              <ul>
+                                  <li><span>CedX - (2020)</span><br>Web Development</li>
+                                  <li><span>CS50x - (2022)</span><br>Introduction to Computer Science</li>
+                                  <li><span>UBT - (2020-2023)</span><br>Computer Science and Engineering</li>
+                              </ul>
+                          </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+  </section>
+    <!-- EXPERIENCE SECTION-->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="skills frontend-section">
+        <p>Frontend Development</p>
+        <div class="logos">
+          <ul>
+            <li><img src="./images/html.png" alt=""></li>
+            <li><img src="./images/css.png" alt=""></li>
+            <li><img src="./images/js.png" alt=""></li>
+            <li><img src="./images/react.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+      <br>
+      <div class="skills backend-section">
+        <p>Backend Development</p>
+        <div class="logos">
+          <ul>
+            <li><img src="./images/c-sharp.png" alt=""></li>
+            <li><img src="./images/java.png" alt=""></li>
+            <li><img src="./images/php.png" alt=""></li>
+            <li><img src="./images/sql-server.png" alt=""></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    
+    <!-- PORTFOLIO SECTION -->
+
+    <section class="work" id="work">
+      <p class="section__text__p1">My Recent</p>
+      <h1 class="title">Projects</h1><br>
+      <div class="row">
+        <div class="work__boxes">
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Troja Restaurant</h3>
+              <p>
+                A cross-platform web application built with .NET MVC that enables users to purchase food, make online reservations, and process payments securely through Stripe.
+              </p>
+              <div class="stack">
+                <p>.NET</p>
+                <p>MVC</p>
+              </div>
+              <div class="work__links">
+                <a target="_blank" href="https://github.com/ermal666/RMS" rel="norrefer">Code<i class="fa-brands fa-github"></i></a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/troja.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div> 
+      <br>
+      <div class="row">
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>TrustGuard</h3>
+              <p>
+                A cross-platform web app with .NET  and React, enabling easy purchase of diverse insurance policies with secure Stripe payments and comprehensive admin management.
+              </p>
+              <div class="stack">
+                <p>.NET</p>
+                <p>React JS</p>
+              </div>
+              <div class="work__links">
+                <a target="_blank" href="https://github.com/ermal666/TrustGuard-Insurance-Company-" rel="norrefer">Code<i class="fa-brands fa-github"></i></a>
+                <!-- <a target="_blank" href="https://github.com/nisarhassan12/portfolio" rel="norrefer">Live Demo<i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a> -->
+              </div>
+            </div>
+            <div class="work__image-box">
+              <!-- <video src="video.mov" class="work__image" alt="Project 1"></video> -->
+              <img src="./images/trustguard.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div> 
+      <br>
+      <div class="row">
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Sales Management System</h3>
+              <p class>
+                A .NET and React JS app for efficient sales management, including product, sales, and invoice management with real-time information.
+              </p>
+              <div class="stack">
+                <p>.NET</p>
+                <p>React JS</p>
+              </div>
+              <div class="work__links">
+                <a target="_blank" href="https://github.com/Bleronn/SMS" rel="norrefer">Code<i class="fa-brands fa-github"></i></a>
+                <!-- <a target="_blank" href="https://github.com/nisarhassan12/portfolio" rel="norrefer">Live Demo<i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a> -->
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/salessystem.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div> 
+      <br>
+      <div class="row">
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Modern Retail Marketplace</h3>
+              <p>
+                An interactive retail website, inspired by Nike. It offers a modern and captivating user interface, easy navigation, and an extensive selection of athletic products.
+              </p>
+              <div class="stack">
+                <p>HTML</p>
+                <p>CSS</p>
+                <p>PixiJS</p>
+              </div>
+              <div class="work__links">
+                <a target="_blank" href="https://github.com/ermal666/Modern-Retail-Marketplace" rel="norrefer">Code<i class="fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://retail-marketplace.netlify.app/" rel="norrefer">Live Demo<i class="fa-solid fa-arrow-up-right-from-square link-icon"></i></a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/ecommerce-project.png" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!-- CONTACT & FOOOTER SECTION -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/mailicon.png" alt="Email Icon" class="icon contact-icon">
+          <p><a href="mailto:examplemail@gmail.com">ermalkk14@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./images/linkedinicon.png" alt="My LinkdIn Profile" class="icon contact-icon">
+          <p><a href="https://www.linkedin.com/in/ermalkomoni/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Ermal Komoni. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section> -->
