@@ -1,4 +1,9 @@
 @media screen and (max-width: 1400px) {
+  html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
   #profile {
     height: 83vh;
     margin-bottom: 6rem;
@@ -9,6 +14,11 @@
 }
 
 @media screen and (max-width: 1200px) {
+  html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
   #desktop-nav {
     display: none;
   }
@@ -44,6 +54,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  html {
+    /* font-size: 62.5%; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
   #contact,
   footer {
     height: 40vh;
