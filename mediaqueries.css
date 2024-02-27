@@ -126,6 +126,10 @@
   .about-col-2{
     font-size: 14px;
   }
+  .work_image-box-left{
+    margin-bottom: var(--gutter-normal);
+    margin: 0 0rem 0 0;
+  }
   /* nav bar */
   /* nav .fas{
     display: block;

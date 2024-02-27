@@ -53,7 +53,8 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: #ABABAB;
+  font-size: 1.1;
 }
 
 /* TRANSITION */
@@ -258,7 +259,10 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  align-items: center;
+  transition: color 0.05s
 }
+
 
 /* BUTTONS */
 
@@ -549,7 +553,7 @@ article .icon {
   flex-basis: 60%;
 }
 .sub-title{
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 600;
   color: #fff;
 }
@@ -560,10 +564,11 @@ article .icon {
 }
 .tab-links{
   margin-right: 50px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400;
   cursor: pointer;
   position: relative;
+  color: #fff;
 }
 .tab-links::after{
   content: '';
@@ -582,6 +587,7 @@ article .icon {
 .tab-contents ul li{
   list-style: none;
   margin: 10px 0;
+  font-size: 0.9rem;
 }
 .tab-contents ul li span{
   color: rgb(0, 136, 255);
@@ -664,6 +670,10 @@ footer p {
   .row {
       padding: 0 var(--gutter-normal);
   }
+  .work__box{
+    align-items: initial;
+    flex-direction: column-reverse;
+  }  
 }
 
 @media(max-width: 600px) {
@@ -747,10 +757,45 @@ footer p {
   align-items: center;
 }
 
+.work__box-left {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+/* this is displaying bad in the 600px screens */
+.work__image-box-left{ 
+  margin: 0 4rem 0 0;
+}
+/*  */
+
+.work__text-left h3{
+  text-align: center;
+  color: rgb(0, 136, 255);
+}
+.work__text-left p{
+  text-align: center;
+}
+/* .work__text_left {
+  flex: 0 0 30%;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+} */
+
+
 @media(max-width: 900px) {
   .work__box {
       align-items: initial;
       flex-direction: column-reverse;
+  }
+  .work__box-left {
+    align-items: initial;
+    flex-direction: column-reverse;
+  }
+  .work__image-box-left {
+    margin: 0;
+    padding-bottom: 2rem;
   }
   section{
     padding: 1rem;
@@ -798,6 +843,8 @@ footer p {
   text-align: center;
   /* width: 30rem; */
   justify-content: center;
+  color: rgb(0, 136, 255);
+  font-size: 1rem;
 }
 
 .work__list {
