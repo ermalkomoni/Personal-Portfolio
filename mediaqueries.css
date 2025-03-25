@@ -157,16 +157,16 @@
   } */
 
   .status-indicator {
-    bottom: 34px;
-    right: 113px;
-    width: 12px;
-    height: 12px;
+    bottom: 31px;
+    right: 112px;
+    width: 15px;
+    height: 15px;
   }
   
   .status-indicator::before {
     left: -3px;
     top: -3px;
-    width: 18px;
-    height: 18px;
+    width: 21px;
+    height: 21px;
   }
 }
