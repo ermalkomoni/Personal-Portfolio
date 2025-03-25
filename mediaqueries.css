@@ -156,4 +156,17 @@
     cursor: pointer;
   } */
 
+  .status-indicator {
+    bottom: 40px;
+    right: 107px;
+    width: 12px;
+    height: 12px;
+  }
+  
+  .status-indicator::before {
+    left: -3px;
+    top: -3px;
+    width: 18px;
+    height: 18px;
+  }
 }
